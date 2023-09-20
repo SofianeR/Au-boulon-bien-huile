@@ -45,6 +45,10 @@ ul {
 nav ul a {
     text-decoration: none;
     padding-inline: 10px;
+    color: white;
+}
+
+nav ul a:hover {
     color: black;
 }
 
@@ -201,4 +205,12 @@ footer a {
 .footerReso i {
     color: white;
 
+}
+
+.footerReso i:hover {
+    color: black;
+}
+
+.footerReso a:hover {
+    color: black;
 }
