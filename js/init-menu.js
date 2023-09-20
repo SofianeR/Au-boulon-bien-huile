@@ -2,8 +2,8 @@ import {data_menu} from "./mock.js"
 
 function init() {
     const carousel = document.getElementById('carousel')
-    for(var i = 0; data_menu.length; i++) {
-        console.log(data_menu[i])
+    if(carousel){for(var i = 0; data_menu.length; i++) {
+        // console.log(data_menu[i])
 
         let html = `
             <div class="carousel-item" class="colorBlue">
@@ -20,5 +20,18 @@ function init() {
         `;
 
         carousel.innerHTML += html
-    }
-}init()
+    }}
+    
+}
+
+const toggleMenu = () =>{
+    const menuButton = document.querySelector("#burger")
+    const navPhone=document.querySelector(".menu_hidden_phone")
+    
+menuButton.addEventListener("click",(e)=>{
+    console.log(navPhone)
+    navPhone.style.display=(navPhone.style.display=="none")?"block":"none"
+})
+}
+init()
+toggleMenu()
