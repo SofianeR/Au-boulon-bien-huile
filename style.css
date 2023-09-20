@@ -47,7 +47,6 @@ h1 {
     padding: 10px;
 }
 
-h2 {}
 
 .sectionOne {
     padding: 10px;
@@ -55,7 +54,6 @@ h2 {}
 }
 
 .fomulaire-contact {
-    background-color: #FCECC9;
     border-radius: 5%;
     box-shadow: 5px 5px 10px 1px #0000003d;
     margin: 20%;
@@ -67,9 +65,16 @@ h2 {}
     flex-direction: column;
 }
 
+.colorGrey { 
+    color: #545c5f;
+}
+
+.colorBlue { 
+    color: #4f6290;
+}
+
 footer {
     display: flex;
-    background: #545c5f;
     padding: 10px;
     justify-content: space-between;
 }
