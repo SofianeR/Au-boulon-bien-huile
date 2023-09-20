@@ -54,6 +54,11 @@ h1 {
     padding: 10px;
 }
 
+.homeSection {
+    color: white;
+    margin: 0 auto;
+}
+
 
 .sectionOne {
     padding: 0px;
@@ -77,6 +82,33 @@ h1 {
     padding: 10%;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
+}
+
+.formContact input, .formContact textarea {
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.inputLabel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5% 0;
+}
+
+.formContact button {
+    padding: 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: #fcecc9;
+    color: black;
+    cursor: pointer;
+}
+
+.formContact button:hover {
+    background-color: green;
+    color: white;
 }
 
 .colorGrey {
@@ -91,6 +123,7 @@ footer {
     display: flex;
     padding: 10px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footerContact {
@@ -120,10 +153,13 @@ footer {
 .card {
 
     display: flex;
-    background: #545c5f;
+    background-color: #fcecc9;
+
     justify-content: center;
     align-items: center;
     padding: 1rem;
+
+    border-radius: 5px;
 }
 
 .cart-text {
@@ -133,4 +169,36 @@ footer {
 
 .card-image {
     border-radius: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* PAGE MENU */
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    max-width: 100vw;
+}
+
+.carousel-item {
+    margin: 0 15px;
+}
+
+.footerReso {
+    width: 20%;
+}
+
+.footerReso a {
+    margin: 0 5%;
+}
+
+.footerReso i {
+    color: white;
+
 }

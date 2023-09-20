@@ -38,6 +38,10 @@
           <li>
             <a href="./contact.html">Contact</a>
           </li>
+
+          <li>
+            <a href="./nos-equipe.html">Notre équipe</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -45,25 +49,32 @@
     <main>
       <section id="fomulaire-contact" class="fomulaire-contact">
         <form action="" class="formContact colorBlue">
-          <label for="name">Nom</label>
-          <input id="name" name="name" type="text" placeholder="Nom" />
+          <div class="inputLabel">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" placeholder="Nom" />
+          </div>
 
-          <label for="email">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="text"
-            placeholder="adresse mail"
-          />
+          <div class="inputLabel">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="text"
+              placeholder="adresse mail"
+            />
+          </div>
 
-          <label for="message">Message</label>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
+          <div class="inputLabel">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
           <button type="submit">Envoyer</button>
         </form>
       </section>
@@ -73,7 +84,8 @@
       <img src="../assets/img/logo-no-background.png" alt="" />
       <a href="tel:+33764534231">Notre numéro de téléphone</a>
       <a href="mailto:monMail@gmail.fr">Notre Email</a>
-      <div>
+
+      <div class="footerReso">
         <a href="http://www.facebook.fr">
           <i class="fa-brands fa-facebook"></i>
         </a>
