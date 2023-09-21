@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((json) => {
         console.log(json);
         if (json.statut === "OK") {
-          //   window.location.href = "./backoffice.html";
+          alert(`Bienvenue ${json.user.username}`);
+          window.location.href = "./backoffice.html";
         }
       })
       .catch((error) => {

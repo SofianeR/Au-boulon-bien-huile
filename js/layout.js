@@ -354,6 +354,10 @@ window.customElements.define(
             <li>
               <a href="../pages/nos-equipe.html">Nous</a>
             </li>
+
+            <li>
+              <a href="../pages/login.html">Login</a>
+            </li>
     
             <li>
               <a href="../pages/shop.html">

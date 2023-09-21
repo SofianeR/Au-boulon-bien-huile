@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((json) => {
           console.log(json);
           if (json.statut === "OK") {
-            window.location.href = "./backoffice.html";
+            window.location.href = "./login.html";
           } else {
             errorMessage.innerText = json.message;
             errorMessage.style.color = "red";
