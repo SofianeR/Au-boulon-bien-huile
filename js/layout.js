@@ -337,6 +337,9 @@ window.customElements.define(
             </li>
     
             <li>
+                <a href="../pages/shop.html">Shop</a>
+            </li>
+            <li>
               <a href="../pages/shop.html">
                 <i class="fa-solid fa-cart-shopping"></i>
               </a>
@@ -356,14 +359,13 @@ window.customElements.define(
             </li>
 
             <li>
+                <a href="../pages/shop.html">Shop</a>
+            </li>
+
+            <li>
                 <a href="../pages/login.html">Login</a>
             </li>
     
-            <li>
-              <a href="../pages/shop.html">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </a>
-            </li>
           </ul>
         </nav>
       </header>
