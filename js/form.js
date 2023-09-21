@@ -139,6 +139,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   captchaUserText.addEventListener("input", (e) => {
     userTextValue = e.target.value;
-    console.log(userTextValue === randomCaptchaText.innerHTML);
   });
 });

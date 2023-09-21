@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   inputs.forEach((input) => {
     input.addEventListener("input", (e) => {
       loginDetails[input.id] = e.target.value;
-      console.log(loginDetails);
+      //console.log(loginDetails);
     });
   });
 
@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
       .then((response) => response.json())
       .then((json) => {
-        console.log(json);
         if (json.statut === "OK") {
           alert(`Bienvenue ${json.user.username}`);
           window.localStorage.setItem("connexion", json.user.token);

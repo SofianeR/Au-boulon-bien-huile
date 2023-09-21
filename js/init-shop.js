@@ -2,9 +2,7 @@ let data = JSON.parse(localStorage.getItem('panier'))
 
 function init() {
     let carousel = document.querySelector('#panier-list')
-
-    console.log(data)
-
+    //console.log(data)
     for(let item of data) {
         if(item) {
             let html = `

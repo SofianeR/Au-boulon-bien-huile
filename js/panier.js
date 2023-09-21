@@ -42,7 +42,7 @@ decrementBtn.forEach((btn) => {
  
 function end(cart) {
     localStorage.setItem('panier', JSON.stringify(cart))
-    console.table(JSON.parse(localStorage.getItem('panier')))
+    //console.table(JSON.parse(localStorage.getItem('panier')))
     
     //faire un update() qui uppdate le total price / price et la qty
     location.reload()

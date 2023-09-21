@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const url_server = "http://localhost:4000/signup/submit";
 
       const dataToSendStringified = JSON.stringify(signupDetailsToSend);
-      console.log(dataToSendStringified);
 
       fetch(url_server, {
         method: "POST",
@@ -32,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
         .then((response) => response.json())
         .then((json) => {
-          console.log(json);
           if (json.statut === "OK") {
             window.location.href = "./login.html";
           } else {

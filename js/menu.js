@@ -5,7 +5,7 @@ const toggleMenu = () =>{
     
     if(navPhone) {
         menuButton.addEventListener("click",(e)=>{
-            console.log(navPhone)
+            //console.log(navPhone)
             e.preventDefault()
             navPhone.style.display=(navPhone.style.display=="none")?"block":"none"
         })
