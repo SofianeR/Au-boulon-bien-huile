@@ -1,10 +1,12 @@
-window.customElements.define('layout-element', class extends HTMLElement {
+window.customElements.define(
+  "layout-element",
+  class extends HTMLElement {
     constructor() {
       super();
-  
+
       // Créez un Shadow DOM pour encapsuler le contenu du composant.
-      this.attachShadow({ mode: 'open' });
-  
+      this.attachShadow({ mode: "open" });
+
       // Créez les éléments HTML pour le layout en utilisant des backticks.
       this.shadowRoot.innerHTML = `
         <style>
@@ -380,9 +382,10 @@ window.customElements.define('layout-element', class extends HTMLElement {
       </footer>
       `;
     }
-  });
+  }
+);
 
-  /**
+/**
    * html
       <!DOCTYPE html>
       <html lang="en">
