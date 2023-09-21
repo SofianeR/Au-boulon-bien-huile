@@ -322,7 +322,7 @@ window.customElements.define(
               alt="Logo société au boulon bien huilé" /></a>
         </div>
         <nav>
-          <i class="fa-solid fa-burger" id="burger"></i>
+          <button id="burger"> 🍔 </button>
           <ul class="menu_hidden_phone">
             <li>
               <a href="../pages/menu.html">Menu</a>
@@ -337,11 +337,12 @@ window.customElements.define(
             </li>
     
             <li>
-                <a href="../pages/shop.html">Shop</a>
+                <a href="../pages/shop.html">
+                🛒</a>
             </li>
 
             <li>
-                <a href="../pages/login.html">Login</a>
+                <a href="../pages/login.html">👤</a>
             </li>
     
           </ul>
@@ -359,11 +360,11 @@ window.customElements.define(
             </li>
 
             <li>
-                <a href="../pages/shop.html">Shop</a>
+                <a href="../pages/shop.html">🛒</a>
             </li>
 
             <li>
-                <a href="../pages/login.html">Login</a>
+                <a href="../pages/login.html">👤</a>
             </li>
     
           </ul>

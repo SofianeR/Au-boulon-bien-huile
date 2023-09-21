@@ -1,9 +1,5 @@
 let data = JSON.parse(localStorage.getItem('panier'))
 
-function update() {
-    
-}
-
 function init() {
     let carousel = document.querySelector('#panier-list')
 
@@ -12,41 +8,23 @@ function init() {
     for(let item of data) {
         if(item) {
             let html = `
-                <div>
+                <div class="card custom-card">
                     <h3>${item.title}</h3>
                     <div>
-                        <p>${item.price}</p>
-                        <p>${item.qty}</p>
-                    </div>
-                    <button id="decrement" data-id=${item.id}>
+                        <p>price: ${item.price}€ ${item.qty > 1 ? ` / total: ${item.price * item.qty}€`: ''}</p>
+                        <p>qty: ${item.qty}</p>
+                        <button id="decrement" data-id=${item.id} data-title="${item.title}" data-price="${item.price}">
                         -1
-                    </button>
+                        </button>
+                        <button id="cart-btn" data-id=${item.id} data-title="${item.title}" data-price="${item.price}">
+                        +1
+                        </button>
+                    </div>
                 </div>
             `
-
             carousel.innerHTML += html
         }
     }
 }
 
 init()
-
-let decrementBtn = document.querySelectorAll('#decrement')
-decrementBtn.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-        let id = e.target.dataset.id
-        for(let item of data) {
-            
-            try {
-                if(item!==null && item.qty >= 1) {
-                    if(item.id === id) {
-                        item.qty-1
-                        localStorage.setItem("panier", JSON.stringify(data))
-                    }
-                } 
-            } catch (error) {
-
-            }
-        }
-    })
-})

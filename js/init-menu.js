@@ -1,27 +1,29 @@
-import {data_menu} from "./mock.js"
+import { data_menu } from "./mock.js"
 
 function init() {
     const carousel = document.getElementById('carousel')
-    if(carousel){for(var i = 0; data_menu.length; i++) {
-        // console.log(data_menu[i])
-
-        let html = `
+    if (carousel) {
+        for (let item of data_menu) {
+            // console.log(item)
+            if (item) {
+                let html = `
             <div class="carousel-item" class="colorBlue">
                 <img
-                    src="${data_menu[i].img}"
-                    alt="${data_menu[i].title} image"
+                    src="${item.img}"
+                    alt="${item.title} image"
                 />
-                <h3>${data_menu[i].title}</h3>
-                <p>${data_menu[i].description}</p>
-                <button id="cart-btn" data-id="${data_menu[i].id}" data-price="${data_menu[i].price}" data-title="${data_menu[i].title}">
+                <h3>${item.title}</h3>
+                <p>${item.description}</p>
+                <button id="cart-btn" data-id="${item.id}" data-price="${item.price}" data-title="${item.title}">
                     add
                 </button>
             </div>
         `;
+                carousel.innerHTML += html
+            }
+        }
+    }
 
-        carousel.innerHTML += html
-    }}
-    
 }
 
 init()
