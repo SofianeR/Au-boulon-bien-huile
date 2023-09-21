@@ -19,61 +19,102 @@
   </head>
 
   <body>
-    <layout-element>
-      <main>
-        <section id="fomulaire-contact" class="fomulaire-contact">
-          <div id="errorMessageContainer"><p class="errorMessage"></p></div>
-          <form action="" class="formContact colorBlue">
-            <div class="inputLabel">
-              <label for="name">Nom</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Nom"
-                class="formDetailsText"
-              />
-            </div>
+    <header class="colorGrey">
+      <div>
+        <a href="../index.html"><img src="../assets/img/Logo/logo_header.webp"
+            alt="Logo société au boulon bien huilé" /></a>
+      </div>
+      <nav>
+        <i class="fa-solid fa-burger" id="burger"></i>
+        <ul class="menu_hidden_phone">
+          <li>
+            <a href="../pages/menu.html">Menu</a>
+          </li>
+  
+          <li>
+            <a href="../pages/contact.html">Contact</a>
+          </li>
+  
+          <li>
+            <a href="../pages/nos-equipe.html">Nous</a>
+          </li>
+  
+          <li>
+            <a href="../pages/shop.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu_hidden">
+          <li>
+            <a href="../pages/menu.html">Menu</a>
+          </li>
+  
+          <li>
+            <a href="../pages/contact.html">Contact</a>
+          </li>
+  
+          <li>
+            <a href="../pages/nos-equipe.html">Nous</a>
+          </li>
+  
+          <li>
+            <a href="../pages/shop.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+    </nav>
+    </header>
 
-            <div class="inputLabel">
-              <label for="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="adresse mail"
-                class="formDetailsText"
-              />
-            </div>
+    <main>
+      <section id="fomulaire-contact" class="fomulaire-contact">
+        <form action="" class="formContact colorBlue">
+          <div class="inputLabel">
+            <label for="name">Nom :</label>
+            <input id="name" name="name" type="text" placeholder="Nom" />
+          </div>
 
-            <div class="inputLabel">
-              <label for="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Message"
-                class="formDetailsText"
-              ></textarea>
-            </div>
+          <div class="inputLabel">
+            <label for="email">Email :</label>
+            <input
+              id="email"
+              name="email"
+              type="text"
+              placeholder="adresse mail"
+            />
+          </div>
 
-            <div id="captchaContainer">
-              <div id="captchaRandomText"></div>
-              <div class="userText inputLabel">
-                <label for="userText">Etes-vous bien un robot ?</label>
-                <input type="text" name="userText" id="captchaUserText" />
-              </div>
-              <div class="errorCaptcha">
-                <p id="errorCaptchaText"></p>
-              </div>
-            </div>
+          <div class="inputLabel">
+            <label for="message">Message :</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
 
-            <button class="submitButton" type="submit">Envoyer</button>
-          </form>
-        </section>
-      </main>
-    </layout-element>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="colorGrey">
+      <img src="../assets/img/logo/logo_footer_medium.webp" alt="" />
+      <a href="tel:+33764534231">Notre numéro de téléphone</a>
+      <a href="mailto:monMail@gmail.fr">Notre Email</a>
+
+      <div class="footerReso">
+        <a href="http://www.facebook.fr">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="http://www.instagram.fr">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
   </body>
   <script type="module" src="../js/form.js"></script>
 </html>
