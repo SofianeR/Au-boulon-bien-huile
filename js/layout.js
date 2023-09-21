@@ -322,23 +322,21 @@ window.customElements.define(
               alt="Logo société au boulon bien huilé" /></a>
         </div>
         <nav>
-          <button id="burger"> 🍔 </button>
           <ul class="menu_hidden_phone">
             <li>
-              <a href="../pages/menu.html">Menu</a>
+              <a href="../pages/menu.html">📖</a>
             </li>
     
             <li>
-              <a href="../pages/contact.html">Contact</a>
+              <a href="../pages/contact.html">📞</a>
             </li>
     
             <li>
-              <a href="../pages/nos-equipe.html">Nous</a>
+              <a href="../pages/nos-equipe.html">👥</a>
             </li>
     
             <li>
-                <a href="../pages/shop.html">
-                🛒</a>
+                <a href="../pages/shop.html">🛒</a>
             </li>
 
             <li>
@@ -356,15 +354,15 @@ window.customElements.define(
             </li>
     
             <li>
-              <a href="../pages/nos-equipe.html">Nous</a>
+              <a href="../pages/nos-equipe.html">L'équipe</a>
             </li>
 
             <li>
-                <a href="../pages/shop.html">🛒</a>
+                <a href="../pages/shop.html">Panier</a>
             </li>
 
             <li>
-                <a href="../pages/login.html">👤</a>
+                <a href="../pages/login.html">Login</a>
             </li>
     
           </ul>

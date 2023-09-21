@@ -337,6 +337,13 @@ footer a {
     display: flex;
     flex-direction: column;
     align-items: start;
+    padding: 1rem;
+}
+
+.cm-btn {
+    padding: .5rem 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 .cm-btn-valid {

@@ -10,9 +10,13 @@ btns.forEach((btn) => {
         let price = e.target.dataset.price
         let title = e.target.dataset.title
         
+        console.log(cart)
+        if(cart ==null) {
+            cart = []
+        }
         if(id in cart) {
             cart[id].qty++
-            alert('+1')
+            alert(`vous avez ajouté "+1 ${title}(${cart[id].qty}) au panier !"`)
         } else {
             // create item
             let item = {
@@ -22,7 +26,7 @@ btns.forEach((btn) => {
                 qty: 1
             }
             cart[id] = item
-            alert(`vou avez r'ajouté "1 ${title}" au panier !`)
+            alert(`vou avez ajouté "1 ${title}" au panier !`)
         }
         end(cart);
     })
@@ -42,7 +46,7 @@ decrementBtn.forEach((btn) => {
  
 function end(cart) {
     localStorage.setItem('panier', JSON.stringify(cart))
-    //console.table(JSON.parse(localStorage.getItem('panier')))
+    console.table(JSON.parse(localStorage.getItem('panier')))
     
     //faire un update() qui uppdate le total price / price et la qty
     location.reload()

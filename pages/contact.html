@@ -1,80 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="../js/layout.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="../js/layout.js"></script>
 
-    <title>Nous contacter</title>
-  </head>
+  <link rel="stylesheet" href="../style.css" />
 
-  <body>
-    <layout-element>
-      <main>
-        <section id="fomulaire-contact" class="fomulaire-contact">
-          <div id="errorMessageContainer"><p class="errorMessage"></p></div>
-          <form action="" class="formContact colorBlue">
-            <div class="inputLabel">
-              <input type="text" />
-              <label for="name">Nom</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Nom"
-                class="formDetailsText"
-              />
+  <title>Nous contacter</title>
+</head>
+
+<body>
+  <layout-element>
+    <main>
+      <section id="fomulaire-contact" class="fomulaire-contact">
+        <div id="errorMessageContainer">
+          <p class="errorMessage"></p>
+        </div>
+        <form action="" class="formContact colorBlue">
+          <div class="inputLabel">
+            <input type="text" />
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" placeholder="Nom" class="formDetailsText" />
+          </div>
+
+          <div class="inputLabel">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="adresse mail" class="formDetailsText" />
+          </div>
+
+          <div class="inputLabel">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
+              class="formDetailsText"></textarea>
+          </div>
+
+          <div id="captchaContainer">
+            <div id="captchaRandomText"></div>
+            <div class="userText inputLabel">
+              <label for="userText">Etes-vous bien un robot ?</label>
+              <input type="text" name="userText" id="captchaUserText" />
             </div>
-
-            <div class="inputLabel">
-              <label for="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="adresse mail"
-                class="formDetailsText"
-              />
+            <div class="errorCaptcha">
+              <p id="errorCaptchaText"></p>
             </div>
+          </div>
 
-            <div class="inputLabel">
-              <label for="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Message"
-                class="formDetailsText"
-              ></textarea>
-            </div>
+          <button class="submitButton" type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+  </layout-element>
+</body>
+<script type="module" src="../js/form.js"></script>
 
-            <div id="captchaContainer">
-              <div id="captchaRandomText"></div>
-              <div class="userText inputLabel">
-                <label for="userText">Etes-vous bien un robot ?</label>
-                <input type="text" name="userText" id="captchaUserText" />
-              </div>
-              <div class="errorCaptcha">
-                <p id="errorCaptchaText"></p>
-              </div>
-            </div>
-
-            <button class="submitButton" type="submit">Envoyer</button>
-          </form>
-        </section>
-      </main>
-    </layout-element>
-  </body>
-  <script type="module" src="../js/form.js"></script>
 </html>

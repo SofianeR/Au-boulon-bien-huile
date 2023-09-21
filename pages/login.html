@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="../js/layout.js"></script>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../authStyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Login</title>
-  </head>
+  <script src="../js/layout.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../authStyle.css" />
 
-  <body>
-    <layout-element>
-      <main>
-        <form class="authFormContainer">
-          <div class="inputContainer">
-            <label for="email">Votre email</label>
-            <input type="text" name="email" id="email" />
-          </div>
+  <title>Login</title>
+</head>
 
-          <div class="inputContainer">
-            <label for="password">Votre mot de passe</label>
-            <input type="password" name="password" id="password" />
-          </div>
+<body>
+  <layout-element>
+    <main>
+      <form class="authFormContainer">
+        <div class="inputContainer">
+          <label for="email">Votre email</label>
+          <input type="text" name="email" id="email" />
+        </div>
 
-          <button id="loginButton" type="submit">Envoyer</button>
-        </form>
-        <a href="./signup.html">Pas encore de compte, c'est par ici</a>
-      </main>
-    </layout-element>
-  </body>
-  <script src="../js/login.js"></script>
+        <div class="inputContainer">
+          <label for="password">Votre mot de passe</label>
+          <input type="password" name="password" id="password" />
+        </div>
+
+        <button id="loginButton" type="submit">Envoyer</button>
+      </form>
+      <a href="./signup.html">Pas encore de compte, c'est par ici</a>
+    </main>
+  </layout-element>
+</body>
+<script src="../js/login.js"></script>
+
 </html>
