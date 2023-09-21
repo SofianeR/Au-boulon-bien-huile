@@ -276,7 +276,7 @@ window.customElements.define('layout-element', class extends HTMLElement {
         <header class="colorGrey">
             <div>
                 <img
-                src="./assets/img/logo-no-background.png"
+                src="../assets/img/logo-no-background.png"
                 alt="Logo société au boulon bien huilé"
                 />
             </div>
@@ -288,19 +288,19 @@ window.customElements.define('layout-element', class extends HTMLElement {
                 </li>
 
                 <li>
-                    <a href="./pages/menu.html">Menu</a>
+                    <a href="./menu.html">Menu</a>
                 </li>
 
                 <li>
-                    <a href="./pages/contact.html">Contact</a>
+                    <a href="./contact.html">Contact</a>
                 </li>
 
                 <li>
-                    <a href="./pages/nos-equipe.html">Nous</a>
+                    <a href="./nos-equipe.html">Nous</a>
                 </li>
 
                 <li>
-                    <a href="./pages/shop.html">
+                    <a href="./shop.html">
                     <i class="fa-solid fa-cart-shopping"></i>
                     </a>
                 </li>
@@ -311,19 +311,19 @@ window.customElements.define('layout-element', class extends HTMLElement {
                 </li>
 
                 <li>
-                    <a href="./pages/menu.html">Menu</a>
+                    <a href="./menu.html">Menu</a>
                 </li>
 
                 <li>
-                    <a href="./pages/contact.html">Contact</a>
+                    <a href="./contact.html">Contact</a>
                 </li>
 
                 <li>
-                    <a href="./pages/nos-equipe.html">Nous</a>
+                    <a href="./nos-equipe.html">Nous</a>
                 </li>
 
                 <li>
-                    <a href="./pages/shop.html">
+                    <a href="./shop.html">
                     <i class="fa-solid fa-cart-shopping"></i>
                     </a>
                 </li>
