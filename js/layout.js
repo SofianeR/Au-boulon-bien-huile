@@ -339,11 +339,11 @@ window.customElements.define(
             <li>
                 <a href="../pages/shop.html">Shop</a>
             </li>
+
             <li>
-              <a href="../pages/shop.html">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </a>
+                <a href="../pages/login.html">Login</a>
             </li>
+    
           </ul>
           <ul class="menu_hidden">
             <li>
