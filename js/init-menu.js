@@ -14,7 +14,7 @@ function init() {
                 />
                 <h3>${item.title}</h3>
                 <p>${item.description}</p>
-                <button id="cart-btn" data-id="${item.id}" data-price="${item.price}" data-title="${item.title}">
+                <button class="cm-btn-valid" id="cart-btn" data-id="${item.id}" data-price="${item.price}" data-title="${item.title}">
                     add
                 </button>
             </div>

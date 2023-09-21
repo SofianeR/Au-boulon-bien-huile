@@ -338,3 +338,38 @@ footer a {
     flex-direction: column;
     align-items: start;
 }
+
+.cm-btn-valid {
+    background-color: #4f6290;
+    color: white;
+    border: 2px solid #4f6290; 
+}
+
+.cm-btn-alert {
+    background-color: red;
+    color: white;
+    border: 2px solid red; 
+}
+
+.cm-btn-base {
+    background-color: #545c5f;
+    color: white;
+    border: 2px solid #545c5f;
+}
+
+.cm-btn-base:hover {
+    background-color: white; 
+    color: black;
+}
+
+.cm-btn-alert:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.cm-btn-valid:hover {
+    color: black;
+    background-color: white; 
+
+}
