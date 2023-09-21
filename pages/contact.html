@@ -48,10 +48,17 @@
 
     <main>
       <section id="fomulaire-contact" class="fomulaire-contact">
+        <div id="errorMessageContainer"><p class="errorMessage"></p></div>
         <form action="" class="formContact colorBlue">
           <div class="inputLabel">
             <label for="name">Nom</label>
-            <input id="name" name="name" type="text" placeholder="Nom" />
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Nom"
+              class="formDetailsText"
+            />
           </div>
 
           <div class="inputLabel">
@@ -59,8 +66,9 @@
             <input
               id="email"
               name="email"
-              type="text"
+              type="email"
               placeholder="adresse mail"
+              class="formDetailsText"
             />
           </div>
 
@@ -72,10 +80,11 @@
               cols="30"
               rows="10"
               placeholder="Message"
+              class="formDetailsText"
             ></textarea>
           </div>
 
-          <button type="submit">Envoyer</button>
+          <button class="submitButton" type="submit">Envoyer</button>
         </form>
       </section>
     </main>
