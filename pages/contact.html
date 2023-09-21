@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="../js/layout.js"></script>
 
     <link rel="stylesheet" href="../style.css" />
 
@@ -18,22 +19,8 @@
   </head>
 
   <body>
-    <header class="colorGrey">
-      <div>
-        <img
-          src="../assets/img/logo-no-background.png"
-          alt="Logo société au boulon bien huilé"
-        />
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html">Home</a>
-          </li>
 
-          <li>
-            <a href="./menu.html">Menu</a>
-          </li>
+
 
           <li>
             <a href="./contact.html">Contact</a>
@@ -45,7 +32,7 @@
         </ul>
       </nav>
     </header>
-
+   <layout-element>
     <main>
       <section id="fomulaire-contact" class="fomulaire-contact">
         <div id="errorMessageContainer"><p class="errorMessage"></p></div>
@@ -88,6 +75,7 @@
         </form>
       </section>
     </main>
+         </layout-element>
 
     <footer class="colorGrey">
       <img src="../assets/img/logo-no-background.png" alt="" />
@@ -103,7 +91,9 @@
         </a>
       </div>
     </footer>
-  </body>
 
-  <script src="/js/form.js"></script>
+  </body>
+  <script type="module" src="../js/menu.js"></script>
+
+  <script src="../js/form.js"></script>
 </html>

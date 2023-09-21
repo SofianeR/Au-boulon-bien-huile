@@ -12,63 +12,26 @@
       referrerpolicy="no-referrer"
     />
 
+    <script src="../js/layout.js"></script>
     <link rel="stylesheet" href="../style.css" />
 
     <title>Au boulon bien huilé</title>
   </head>
 
   <body>
-    <header class="colorGrey">
-      <div>
-        <img
-          src="../assets/img/logo-no-background.png"
-          alt="Logo société au boulon bien huilé"
-        />
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html">Home</a>
-          </li>
-
-          <li>
-            <a href="./menu.html">Menu</a>
-          </li>
-
-          <li>
-            <a href="./contact.html">Contact</a>
-          </li>
-
-          <li>
-            <a href="./nos-equipe.html">Notre équipe</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+    
+    <layout-element>
     <h1>La carte !</h1>
-
+      
     <main>
       <section id="list-menu" class="sectionOne">
         <div id="carousel" class="carousel products"></div>
       </section>
     </main>
+    </layout-element>
 
-    <footer class="colorGrey">
-      <img src="../assets/img/logo-no-background.png" alt="" />
-      <a href="tel:+33764534231">Notre numéro de téléphone</a>
-      <a href="mailto:monMail@gmail.fr">Notre Email</a>
-
-      <div class="footerReso">
-        <a href="http://www.facebook.fr">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="http://www.instagram.fr">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
-    </footer>
   </body>
+  <script type="module" src="../js/menu.js"></script>
 
   <script type="module" src="../js/init-menu.js"></script>
   <script type="module" src="../js/mock.js"></script>
