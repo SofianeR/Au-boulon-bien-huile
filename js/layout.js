@@ -20,20 +20,25 @@ window.customElements.define('layout-element', class extends HTMLElement {
         }
         
         main {
-        
             min-height: 90vh;
         }
         
-        img {
-            padding: 10px;
+        main img {
+            opacity: 70%;
+            width: 100%;
+        }
+        
+        .sectionOne img {
+            margin: 10px;
             width: 25%;
             min-width: 200px;
-            padding-left: 0px;
+            border: solid 2px #545c5f;
         
         }
         
         header {
             padding: 10px;
+            box-shadow: 6px 5px 10px 5px #0000003d;
         }
         
         header, nav ul {
@@ -59,14 +64,11 @@ window.customElements.define('layout-element', class extends HTMLElement {
         
         nav ul a {
             text-decoration: none;
-            padding-inline: 10px;
-            padding: 0.5rem 1rem;
             color: white;
+            margin: 5px;
         }
         
         nav ul a:hover {
-            background-color: white;
-            border-radius: 20px;
             color: black;
         }
         
@@ -92,6 +94,7 @@ window.customElements.define('layout-element', class extends HTMLElement {
             display: flex;
             flex-direction: column;
             width: 100%;
+            text-align: justify;
         }
         
         .sectionOneContent div {
@@ -176,32 +179,37 @@ window.customElements.define('layout-element', class extends HTMLElement {
         }
         
         .card-container {
+            margin-top: 5%;
+            margin-bottom: 5%;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            gap: 1rem;
+            gap: 25px;
             padding: 1rem;
         }
         
         .card {
-        
             display: flex;
             background-color: #fcecc9;
-        
             justify-content: center;
             align-items: center;
-            padding: 1rem;
-        
+            padding: 2%;
             border-radius: 20px;
+            max-height: 25%;
+            box-shadow: 0px 0px 5px 0px #545c5f;
+            text-align: justify;
         }
         
         .cart-text {
             display: flex;
             flex-direction: column;
-        }
+        }   
         
         .card-image {
+            margin: 2%;
             border-radius: 100%;
+            border: solid 2px #545c5f;
+            width: 25%;
         }
         
         footer a {
@@ -220,8 +228,16 @@ window.customElements.define('layout-element', class extends HTMLElement {
         }
         
         .carousel-item {
+            display: flex;
             margin: 0 15px;
-            width:33%;
+            width: 33%;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fcecc9;
+        }
+        
+        .carousel-item img {
+            width: 33%;
         }
         
         .footerReso {
@@ -262,91 +278,106 @@ window.customElements.define('layout-element', class extends HTMLElement {
         .carousel {
             display: flex;
             flex-direction: column;
-            flex-wrap: nowrap;
-           
+            flex-wrap: nowrap;   
             max-width: 100vw;
         }
         
         .carousel-item {
-            margin: 0 15px;
-            width:33%;
+            width: 100%;
+            align-items: center;
+            margin: 0px;
+            margin-bottom: 10%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            box-shadow: 0px 0px 5px 0px #545c5f;
+        }
+        
+        .carousel-item p {
+            margin: 2%;
+        }
+        
+        .card {
+            flex-direction: column;
+        }
+        
+        .card-image {
+            width: 40%;
+            min-width: 150px;
+        }
+        
+        .sectionOneContent div {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin: 0 2rem;
+            flex-direction: column-reverse;
         }
         } 
         </style>
         <header class="colorGrey">
-            <div>
-                <img
-                src="../assets/img/logo-no-background.png"
-                alt="Logo société au boulon bien huilé"
-                />
-            </div>
-            <nav >
-                <i class="fa-solid fa-burger" id="burger"></i>
-                <ul class="menu_hidden_phone">
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="./menu.html">Menu</a>
-                </li>
-
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-
-                <li>
-                    <a href="./nos-equipe.html">Nous</a>
-                </li>
-
-                <li>
-                    <a href="./shop.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                </li>
-                </ul>
-                <ul class="menu_hidden">
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="./menu.html">Menu</a>
-                </li>
-
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-
-                <li>
-                    <a href="./nos-equipe.html">Nous</a>
-                </li>
-
-                <li>
-                    <a href="./shop.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                </li>
-                </ul>
-            </nav>
-        </header>
+        <div>
+          <a href="index.html"><img src="../assets/img/Logo/logo_header.webp"
+              alt="Logo société au boulon bien huilé" /></a>
+        </div>
+        <nav>
+          <i class="fa-solid fa-burger" id="burger"></i>
+          <ul class="menu_hidden_phone">
+            <li>
+              <a href="../pages/menu.html">Menu</a>
+            </li>
+    
+            <li>
+              <a href="../pages/contact.html">Contact</a>
+            </li>
+    
+            <li>
+              <a href="../pages/nos-equipe.html">Nous</a>
+            </li>
+    
+            <li>
+              <a href="../pages/shop.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu_hidden">
+            <li>
+              <a href="../pages/menu.html">Menu</a>
+            </li>
+    
+            <li>
+              <a href="../pages/contact.html">Contact</a>
+            </li>
+    
+            <li>
+              <a href="../pages/nos-equipe.html">Nous</a>
+            </li>
+    
+            <li>
+              <a href="../pages/shop.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
         <slot></slot>
         
         <footer class="colorGrey">
-            <img src="../assets/img/logo-no-background.png" alt="" />
-            <a href="tel:+33764534231">Notre numéro de téléphone</a>
-            <a href="mailto:monMail@gmail.fr">Notre Email</a>
-
-                <div class="footerReso">
-                    <a href="http://www.facebook.fr">
-                    <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="http://www.instagram.fr">
-                    <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </footer>
+        <img src="../assets/img/logo/logo_footer_medium.webp" alt="" />
+        <a href="tel:+33764534231">Notre numéro de téléphone</a>
+        <a href="mailto:monMail@gmail.fr">Notre Email</a>
+    
+        <div class="footerReso">
+          <a href="http://www.facebook.fr">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="http://www.instagram.fr">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
       `;
     }
   });
