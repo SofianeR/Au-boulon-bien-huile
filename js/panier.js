@@ -11,8 +11,8 @@ btns.forEach((btn) => {
         let id = e.target.dataset.id
         let price = e.target.dataset.price
         let title = e.target.dataset.title
-        
-        if(id in cart) {
+        console.log('id: ',id,'|: ', cart)
+        if(cart.filter((e) => e.id === id).length > 0) {
             cart[id].qty++
         } else {
             // create item
