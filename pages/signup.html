@@ -13,11 +13,10 @@
       referrerpolicy="no-referrer"
     />
 
-    <script src="../js/layout.js"></script>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../authStyle.css" />
 
-    <title>Login</title>
+    <title>Signup</title>
   </head>
 
   <body>
@@ -25,8 +24,12 @@
       <main>
         <form class="authFormContainer">
           <div class="inputContainer">
+            <label for="Username">Username</label>
+            <input type="text" name="Username" id="username" />
+          </div>
+          <div class="inputContainer">
             <label for="email">Votre email</label>
-            <input type="text" name="email" id="email" />
+            <input type="email" name="email" id="email" />
           </div>
 
           <div class="inputContainer">
@@ -34,11 +37,18 @@
             <input type="password" name="password" id="password" />
           </div>
 
-          <button id="loginButton" type="submit">Envoyer</button>
+          <div class="inputContainer">
+            <label for="checkPassword">Vérification mot de passe</label>
+            <input type="password" name="checkPassword" id="checkPassword" />
+          </div>
+
+          <button id="signupButton" type="submit">Envoyer</button>
         </form>
-        <a href="./signup.html">Pas encore de compte, c'est par ici</a>
+        <a href="./auth.html">Déja un compte c'est par ici</a>
       </main>
     </layout-element>
   </body>
-  <script src="../js/login.js"></script>
+  <script src="../js/layout.js"></script>
+
+  <script src="../js/auth.js"></script>
 </html>

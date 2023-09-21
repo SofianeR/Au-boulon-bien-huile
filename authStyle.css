@@ -1,0 +1,37 @@
+.authFormContainer {
+    width: 70%;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.authFormContainer .inputContainer {
+    width: 100%;
+}
+
+.authFormContainer input {
+    padding: 2%;
+    width: 100%;
+}
+
+.authFormContainer button {
+    margin-top: 5%;
+    padding: 3%;
+    border: none;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.authFormContainer button:hover {
+    background-color: greenyellow;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
