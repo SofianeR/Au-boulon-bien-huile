@@ -12,10 +12,10 @@ function init() {
                         <p>price: ${item.price}€ ${item.qty > 1 ? ` / total: ${item.price * item.qty}€`: ''}</p>
                         <p>qty: ${item.qty}</p>
                         <button class="cm-btn cm-btn-alert" id="decrement" data-id=${item.id} data-title="${item.title}" data-price="${item.price}">
-                        -1
+                        -
                         </button>
                         <button class="cm-btn cm-btn-valid" id="cart-btn" data-id=${item.id} data-title="${item.title}" data-price="${item.price}">
-                        +1
+                        +
                         </button>
                     </div>
                 </div>

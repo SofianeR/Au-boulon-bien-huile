@@ -23,19 +23,25 @@
           <p class="errorMessage"></p>
         </div>
         <form action="" class="formContact colorBlue">
+
+          
           <div class="inputLabel">
-            <input type="text" />
-            <label for="name">Nom</label>
-            <input id="name" name="name" type="text" placeholder="Nom" class="formDetailsText" />
+            <label for="name">Numéro de série :</label>
+            <input id="name" name="name" type="text" placeholder="N°" class="formDetailsText" />
           </div>
 
           <div class="inputLabel">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="adresse mail" class="formDetailsText" />
+            <label for="name">Nom du constructeur :</label>
+            <input id="name" name="name" type="text" placeholder="Nom du constructeur" class="formDetailsText" />
           </div>
 
           <div class="inputLabel">
-            <label for="message">Message</label>
+            <label for="email">Email :</label>
+            <input id="email" name="email" type="email" placeholder="E-mail" class="formDetailsText" />
+          </div>
+
+          <div class="inputLabel">
+            <label for="message">Message :</label>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
               class="formDetailsText"></textarea>
           </div>
@@ -43,7 +49,7 @@
           <div id="captchaContainer">
             <div id="captchaRandomText"></div>
             <div class="userText inputLabel">
-              <label for="userText">Etes-vous bien un robot ?</label>
+              <label for="userText">Êtes-vous bien un robot ?</label>
               <input type="text" name="userText" id="captchaUserText" />
             </div>
             <div class="errorCaptcha">

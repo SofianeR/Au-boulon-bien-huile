@@ -268,6 +268,11 @@ footer a {
 }
 
 @media (max-width: 768px) {
+
+    main {
+        padding: 2%;
+    }
+
     .fa-burger {
         display: block;
         color: white;
@@ -295,13 +300,18 @@ footer a {
         margin-bottom: 10%;
         padding-top: 5%;
         padding-bottom: 5%;
-        box-shadow: 0px 10px 15px -5px #545c5f;
+        box-shadow: 0px 10px 5px -5px #545c5f;
         padding-left: 0px;
         padding-right: 0px;
     }
 
     .carousel-item p {
         margin: 2%;
+    }
+
+    .carousel-item h3 {
+        padding: 2%;
+        text-align: center;
     }
 
     .card {
@@ -325,6 +335,15 @@ footer a {
         padding-inline: 20px;
     }
 
+    .fomulaire-contact {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .formContact {
+        border-radius: 0px;
+    }
+
 }
 .panier-list {
     padding: 1rem;
@@ -344,18 +363,22 @@ footer a {
     padding: .5rem 2rem;
     font-size: 1.2rem;
     text-transform: uppercase;
+    border-radius: 5%;
+    font-weight: 900;
 }
 
 .cm-btn-valid {
-    background-color: #4f6290;
+    background-color: #545c5f;
     color: white;
-    border: 2px solid #4f6290; 
+    border: 2px solid #545c5f; 
+    border-radius: 5%;
+    font-weight: 900;
 }
 
 .cm-btn-alert {
-    background-color: red;
+    background-color: #545c5f;
     color: white;
-    border: 2px solid red; 
+    border: 2px solid #545c5f; 
 }
 
 .cm-btn-base {
